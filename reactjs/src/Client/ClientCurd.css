@@ -1,0 +1,58 @@
+/* styles.css (or your global CSS file) */
+
+/* Navbar styles (customize as needed) */
+.navbar {
+    background-color: #333; /* Change to your desired navbar color */
+    color: #fff; /* Change to your desired text color */
+    padding: 10px;
+  }
+/*   
+   Full-page background image */
+   /* body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../pics/clientpic.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 1.0;
+  } */
+  
+  /* .content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin: 20px;
+  }   */
+  
+  /* styles.css (or your global CSS file) */
+  
+/* Adjust content padding to ensure it's readable over the background */
+/* styles.css (or your global CSS file) */
+
+/* Navbar styles (customize as needed) */
+
+  /* Adjust content padding to ensure it's readable over the background */
+  .content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha (last) value for content opacity */
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  /* Adjust email input box width and position "Fetch" button closer */
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-control {
+    width: 30%;
+  }
+  
+  button {
+    margin-left: 5px; /* Adjust this value to make the button closer to the email input */
+  }
+  

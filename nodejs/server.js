@@ -16,7 +16,7 @@ app.use(fileupload());
 app.use(bp.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
 
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3004; 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
@@ -24,17 +24,15 @@ app.listen(port, () => {
 app.use(cors());
 
 
-// server.js
-
 var configObj = require("./configure/dbConfig");
 const dburl = configObj.dburl;
 
 // Connect to the MongoDB database
 var dbCon = mongoose.connect(dburl).then(() => {
-    console.log("Connected...");
+  console.log("Connected...");
 }).catch((err) => {
-    console.log("*****" + err.toString());
-    process.exit();
+  console.log("*****" + err.toString());
+  process.exit();
 });
 
 // Define routes for the user and client

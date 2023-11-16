@@ -24,15 +24,17 @@ app.listen(port, () => {
 app.use(cors());
 
 
+// server.js
+
 var configObj = require("./configure/dbConfig");
 const dburl = configObj.dburl;
 
 // Connect to the MongoDB database
 var dbCon = mongoose.connect(dburl).then(() => {
-  console.log("Connected...");
+    console.log("Connected...");
 }).catch((err) => {
-  console.log("*****" + err.toString());
-  process.exit();
+    console.log("*****" + err.toString());
+    process.exit();
 });
 
 // Define routes for the user and client

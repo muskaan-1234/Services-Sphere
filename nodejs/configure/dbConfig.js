@@ -1,3 +1,3 @@
-module.exports={
-    dburl:"mongodb://0.0.0.0:27017/mernproject2023"
-}
+module.exports = {
+    dburl: process.env.MONGO_URL || "mongodb://localhost:27017/default_database",
+};

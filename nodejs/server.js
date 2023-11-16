@@ -17,6 +17,16 @@ app.use(bp.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
 
 const port = process.env.PORT || 3004; 
+
+if(process.env.NODE_ENV === "production")
+{
+      app.use(express.static("reactjs/build"));
+      const path=require("path");
+      app.get("*",(req,resp)=>{
+        resp.sendFile(path.resolve(__dirname, 'reactjs', 'build', 'index.html'));
+      })
+}
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
